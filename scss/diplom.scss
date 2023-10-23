@@ -1,3 +1,16 @@
+@media screen and (max-device-width: 480px) {
+    .classForiPhoneDisplay {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media screen and (min-device-width: 768px) {
+    .minimumiPadWidth {
+      clear: both;
+      margin-bottom: 2px solid #ccc;
+    }
+  }
+
 .content {
     background-color:rgba(0, 0, 55, 1);
     width: 1600px;
@@ -5,32 +18,42 @@
     font-family: robo-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
 }
-.menu {
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .logo {
-    width: 40%;
-    margin-top:20px;  
+    width: 30%;
 }
 
-.header a {
-    float: left;
-    color: white;
-    padding: 46px;
-    text-decoration: none;
-    font-size: 20px;
+.menu {
+    width: auto;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding-left: 10%;
+
+    ul {
+        list-style: none;  
+    }
+
+    li {
+        float: left;
+        margin-right: 35px;
+        font-size: 20px;
+        line-height: 90px;
+        letter-spacing: 0.04em;
+    }
+
+    li a {
+        text-decoration: none;
+        padding: 12px;
+        border-radius: 10px; 
+        border: 1px solid;
+        color:white;
+    }
 }
 
 .statue {
-    position: relative;
-    width: 869px;
-    height: 651px;
-    top: 69px;
-    left: 711px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .title {
@@ -40,21 +63,15 @@
     font-size: 80px;
     line-height: 93.75px;
     letter-spacing: 0.05em;
+    color: white;
 }
 
 .subtitle {
+    color: white;
     top: 460px;
     left: 160px;
     position: absolute;
     font-size: 48px;
     line-height: 56.25px;
     font-weight: lighter;
-}
-
-.statue {
-    position: relative;
-    width: 869px;
-    height: 651px;
-    top: 69px;
-    left: 711px;
 }
