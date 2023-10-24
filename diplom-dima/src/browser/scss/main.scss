@@ -1,10 +1,20 @@
 @import './animations.scss';
 
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+* { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333333;
+}
+
 body {
     background-color: #ffffff;
     box-sizing: border-box;
     font-size: 1rem;
-
 }
 
 .container {
@@ -20,6 +30,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    font-weight: bold;
+    font-size:calc(1.3rem + .6vw);
+    font-weight: 600;
 }
 
 .block
@@ -43,6 +56,38 @@ body {
         flex-basis: 370px;
     }
 }
+
+.prdcts-item
+{
+    &-btn-open-info
+    {
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        padding-left: 40px;    
+        padding-right: 40px;    
+        padding-top: 16px;
+        padding-bottom: 16px;   
+        font-weight: 500;
+        font-size:calc(1rem + .6vw);
+    }
+
+    &-heading
+    {
+        margin: .3em;
+        font-size:calc(1.3rem + .6vw);
+        font-weight: 500;
+        font-style: bold;
+    }
+
+    &-info
+    {
+        margin: 1em;
+        font-size:calc(1rem + .4vw);
+        font-style: bold;
+    }
+}
+
 .item-main
 {
     background-color: rgb(146, 206, 255);
