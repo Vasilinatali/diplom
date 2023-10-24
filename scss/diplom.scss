@@ -1,77 +1,86 @@
-@media screen and (max-device-width: 480px) {
-    .classForiPhoneDisplay {
-      font-size: 1.2em;
-    }
-  }
-  
-  @media screen and (min-device-width: 768px) {
-    .minimumiPadWidth {
-      clear: both;
-      margin-bottom: 2px solid #ccc;
-    }
-  }
-
-.content {
+body {
     background-color:rgba(0, 0, 55, 1);
-    width: 1600px;
-    height: 800px;
     font-family: robo-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    height: 800px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px; 
+    border-radius: 10px;
     color: white;
+    }
+  
+    a.active {
+    border: 1px solid;
+    }
 }
 
-.logo {
-    width: 30%;
-}
-
-.menu {
-    width: auto;
+main {
     display: flex;
     align-items: center;
-    position: absolute;
-    padding-left: 10%;
+    justify-content: space-between;
 
-    ul {
-        list-style: none;  
-    }
-
-    li {
-        float: left;
-        margin-right: 35px;
-        font-size: 20px;
-        line-height: 90px;
-        letter-spacing: 0.04em;
-    }
-
-    li a {
-        text-decoration: none;
-        padding: 12px;
-        border-radius: 10px; 
-        border: 1px solid;
-        color:white;
-    }
-}
-
-.statue {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.title {
-    top: 220px;
-    left: 160px;
-    position: absolute;
+    .title h1 {
     font-size: 80px;
-    line-height: 93.75px;
-    letter-spacing: 0.05em;
-    color: white;
+    line-height: 94px;
+    margin: 0;
+    font-weight: 400;
+    }
+
+    .title h2 {
+    font-size: 48px;
+    line-height: 57px;
+    font-weight: 300;
+    margin-top: 40px;
+    }
 }
 
-.subtitle {
-    color: white;
-    top: 460px;
-    left: 160px;
-    position: absolute;
-    font-size: 48px;
-    line-height: 56.25px;
-    font-weight: lighter;
-}
+@media screen and (max-width: 870px) {
+    header {
+        float: none;
+        display: grid;
+        flex-direction: column;
+        text-align: left;
+    }
+    nav {
+        float: none;
+    }
+    .statue {
+        width: 10%;
+    }
+    .title {
+        font-size: 36px;
+    }
+    .subtitle {
+        font-size: 24px;
+    }
+  }
+
+// @media screen and (max-device-width: 480px) {
+//     .classForiPhoneDisplay {
+//       font-size: 1.2em;
+//     }
+//   }
+  
+// @media screen and (min-device-width: 768px) {
+//     .minimumiPadWidth {
+//       clear: both;
+//       margin-bottom: 2px solid #ccc;
+//     }
+//   }
