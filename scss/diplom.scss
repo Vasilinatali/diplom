@@ -10,7 +10,8 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: space-around;
-    height: 800px;
+    width: 100%;
+    max-width: 1600px;
 }
 
 header {
@@ -52,11 +53,14 @@ main {
 }
 
 @media screen and (max-width: 870px) {
+    .container {
+        width: 100%;
+    }
+
     header {
-        float: none;
         display: grid;
-        flex-direction: column;
-        text-align: left;
+        justify-content: center;
+        justify-items: center;
     }
     nav {
         float: none;
@@ -70,6 +74,7 @@ main {
     .subtitle {
         font-size: 24px;
     }
+    
   }
 
 // @media screen and (max-device-width: 480px) {
